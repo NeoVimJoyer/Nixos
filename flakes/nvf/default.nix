@@ -19,12 +19,8 @@
     syntaxHighlighting = true;
     theme = {
       enable = true;
-<<<<<<< HEAD
-      name = "nord";
-=======
       name = "github";
       style = "dark_dimmed";
->>>>>>> 8827c46 (laptop stuff)
     };
 
     # Plugins
