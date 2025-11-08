@@ -6,11 +6,7 @@
     fonts.fontconfig.enable = true;
     programs.alacritty = {
       enable = true;
-<<<<<<< HEAD
-      theme = "nord";
-=======
       theme = "github_dark";
->>>>>>> 8827c46 (laptop stuff)
       settings = {
         window.opacity = 0.9;
         font.normal = {

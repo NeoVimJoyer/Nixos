@@ -7,12 +7,8 @@
     ./home-manager.nix
     ./fonts.nix
     ./nh.nix
-<<<<<<< HEAD
-    ./limine.nix
     "${inputs.nix-mineral}/nix-mineral.nix"
-=======
     ./bootloader.nix
->>>>>>> 8827c46 (laptop stuff)
   ];
 
   # Enable flakes

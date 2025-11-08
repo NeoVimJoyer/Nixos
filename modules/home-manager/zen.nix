@@ -1,60 +1,13 @@
 { config, lib, inputs, ... }:
 
 {
-<<<<<<< HEAD
   imports = [
     inputs.zen-browser.homeModules.twilight-official
   ];
-=======
-  imports = [ inputs.zen-browser.homeModules.beta ];
->>>>>>> 8827c46 (laptop stuff)
 
   config = lib.mkIf config.defaultPkgs.enable {
     programs.zen-browser = {
       enable = true;
-<<<<<<< HEAD
-      policies = {
-        Bookmarks = [
-          {
-            Title = "Grok";
-            URL = "https://grok.com/";
-            Folder = "AI";
-          }
-          {
-            Title = "Claude";
-            URL = "https://claude.ai/";
-            Folder = "AI";
-          }
-          {
-            Title = "OpenAI";
-            URL = "https://openai.com/";
-            Folder = "AI";
-          }
-
-          {
-            Title = "Apps";
-            URL= "https://apps.ccsdut.net";
-            Folder = "School";
-          }
-          {
-            Title = "Canvas";
-            URL = "https://ccsdut.instructure.com/";
-            Folder = "School";
-          }
-          {
-            Title = "Powerschool";
-            URL = "https://powerschool.ccsdut.org/";
-            Folder = "School";
-          }
-
-          {
-            Title = "Github";
-            URL = "https://github.com/";
-          }
-        ];
-      };
-    };
-=======
       policies = let
           mkLockedAttrs = builtins.mapAttrs (_: value: {
             Value = value;
@@ -158,6 +111,5 @@
           SkipTermsOfUse = true;
         };
       };
->>>>>>> 8827c46 (laptop stuff)
   };
 }

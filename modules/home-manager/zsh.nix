@@ -18,11 +18,7 @@
         cl = "clear";
         nv = "nvim";
         tr = "tree";
-<<<<<<< HEAD
-        fetch = "neofetch";
-=======
         ff = "fastfetch";
->>>>>>> 8827c46 (laptop stuff)
         py = "python3";
         veiw = "feh";
         shut = "shutdown now";

@@ -17,11 +17,7 @@
     environment.systemPackages = [
       inputs.nvf.packages.${pkgs.system}.default
       pkgs.tree 
-<<<<<<< HEAD
-      pkgs.neofetch
-=======
       pkgs.fastfetch
->>>>>>> 8827c46 (laptop stuff)
       pkgs.git
       pkgs.feh
       pkgs.tor-browser
