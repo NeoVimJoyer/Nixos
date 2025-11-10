@@ -26,11 +26,6 @@
       url = "github:cynicsketch/nix-mineral";
       flake = false;
     };
-    omarchy-nix = {
-      url = "github:henrysipp/omarchy-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
     nix-ai-tools.url = "github:numtide/nix-ai-tools";
   };
 
@@ -46,6 +41,7 @@
           modules = [
             ./hosts/laptop/configuration.nix
             inputs.home-manager.nixosModules.default
+            inputs.omarchy-nix.nixosModules.default
           ];
         };
 

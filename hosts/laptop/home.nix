@@ -7,8 +7,7 @@
 
   imports = [
     ./../../modules/home-manager/default.nix
-    #./../../modules/home-manager/sway/default.nix
-    ./../../modules/home-manager/omarchy.nix
+    ./../../modules/home-manager/sway/default.nix
   ];
 
   # This value determines the Home Manager release that your configuration is
