@@ -5,7 +5,6 @@
     ./hardware-configuration.nix
     ./../../modules/nixos/default.nix
     #./../../modules/nixos/sway/default.nix
-    ./../../modules/nixos/omarchy.nix
   ];
 
   networking.hostName = "laptop";
