@@ -10,7 +10,8 @@
       settings = {
         window.opacity = 0.9;
         font.normal = {
-          family = "Jetbrains Mono Nerd Font";
+          #family = "Jetbrains Mono Nerd Font";
+          family = "Maple Mono";
           style = "Regular";
         };
       };

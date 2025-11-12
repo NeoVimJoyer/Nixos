@@ -63,6 +63,6 @@
         tooltip-format = "{time}";
       };
     };
-    style = ./style.css;
+    #style = ./style.css;
   };
 }

@@ -41,7 +41,6 @@
           modules = [
             ./hosts/laptop/configuration.nix
             inputs.home-manager.nixosModules.default
-            inputs.omarchy-nix.nixosModules.default
           ];
         };
 

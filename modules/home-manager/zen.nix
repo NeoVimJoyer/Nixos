@@ -36,7 +36,7 @@
         in {
           AutofillAddressEnabled = true;
           AutofillCreditCardEnabled = false;
-          Bookmark = [
+          Bookmark = [ # Make this in preferences so it appears in the toolbar
             {
               Title = "OpenAI";
               URL = "https://openai.com/";

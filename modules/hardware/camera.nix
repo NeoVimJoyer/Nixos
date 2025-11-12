@@ -1,0 +1,5 @@
+{ ... }:
+
+{
+  hardware.facetimehd.enable = true;
+}
