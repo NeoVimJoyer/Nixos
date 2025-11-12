@@ -5,6 +5,8 @@ let
   terminal = "alacritty";
   menu = "wmenu-run";
   networkmanager = "nmtui";
+  fileexplorer = "dolphin";
+  capture = "cheese";
 
   lock = "swaylock";
 in
@@ -31,6 +33,10 @@ in
         outer = 5;
         inner = 5;
       };
+      colors.border = {
+        normal = "#fe0000";
+        focused = "#fe0000";
+      };
 
       # Disable swaybar
       bars = [ ];
@@ -39,8 +45,10 @@ in
         ### Apps
         "${mod}+t" = "exec ${terminal}";
         "${mod}+m" = "exec ${menu}";
-        "${mod}+c" = "exec ${lock}";
+        "${mod}+cl" = "exec ${lock}";
+        "${mod}+ca" = "exec ${capture}";
         "${mod}+n" = "exec ${networkmanager}";
+        "${mod}+fe" = "exec ${fileexplorer}";
 
         ### Browsers
         "${mod}+b+p" = "exec zen";
@@ -49,7 +57,7 @@ in
         ### Utility
         "${mod}+e" = "kill";
         "${mod}+Shift+e" = "exit";
-        "${mod}+f" = "fullscreen";
+        "${mod}+fu" = "fullscreen";
         "${mod}+r" = "reboot";
 
         ### Moving around
