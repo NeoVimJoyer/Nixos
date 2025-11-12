@@ -21,6 +21,7 @@
       pkgs.git
       pkgs.feh
       pkgs.tor-browser
+      pkgs.cheese
     ];
   };
 }

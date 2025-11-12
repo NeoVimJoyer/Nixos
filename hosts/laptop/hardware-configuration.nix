@@ -5,7 +5,7 @@
 
 {
   imports = [ 
-    ./../../modules/hardware/camera.nix
+    ./../../modules/hardware/camera/intel.nix
     (modulesPath + "/hardware/network/broadcom-43xx.nix")
     (modulesPath + "/installer/scan/not-detected.nix")
   ];

@@ -21,6 +21,7 @@
         ff = "fastfetch";
         py = "python3";
         veiw = "feh";
+        capture = "cheese";
         shut = "shutdown now";
       };
       history.size = 10000;
