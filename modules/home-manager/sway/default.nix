@@ -6,7 +6,6 @@ let
   menu = "wmenu-run";
   networkmanager = "nmtui";
   fileexplorer = "dolphin";
-  capture = "cheese";
 
   lock = "swaylock";
 in
@@ -33,9 +32,21 @@ in
         outer = 5;
         inner = 5;
       };
-      colors.border = {
-        normal = "#fe0000";
-        focused = "#fe0000";
+      colors = {
+        unfocused = {
+          background = "#000000";
+          border = "#000000";
+          childBorder = "#000000";
+          indicator = "#000000";
+          text = "#ffffff";
+        };
+        focused = {
+          background = "#000000";
+          border = "#000000";
+          childBorder = "#000000";
+          indicator = "#000000";
+          text = "#ffffff";
+        };
       };
 
       # Disable swaybar
@@ -45,10 +56,9 @@ in
         ### Apps
         "${mod}+t" = "exec ${terminal}";
         "${mod}+m" = "exec ${menu}";
-        "${mod}+cl" = "exec ${lock}";
-        "${mod}+ca" = "exec ${capture}";
+        "${mod}+c" = "exec ${lock}";
         "${mod}+n" = "exec ${networkmanager}";
-        "${mod}+fe" = "exec ${fileexplorer}";
+        "${mod}+f+e" = "exec ${fileexplorer}";
 
         ### Browsers
         "${mod}+b+p" = "exec zen";
@@ -57,7 +67,7 @@ in
         ### Utility
         "${mod}+e" = "kill";
         "${mod}+Shift+e" = "exit";
-        "${mod}+fu" = "fullscreen";
+        "${mod}+f+u" = "fullscreen";
         "${mod}+r" = "reboot";
 
         ### Moving around

@@ -6,7 +6,7 @@
     fonts.fontconfig.enable = true;
     programs.alacritty = {
       enable = true;
-      theme = "github_dark";
+      theme = "oxocarbon";
       settings = {
         window.opacity = 0.9;
         font.normal = {

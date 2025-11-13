@@ -19,8 +19,8 @@
     syntaxHighlighting = true;
     theme = {
       enable = true;
-      name = "github";
-      style = "dark_dimmed";
+      name = "oxocarbon";
+      style = "dark";
     };
 
     # Plugins
