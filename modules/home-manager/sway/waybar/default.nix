@@ -26,7 +26,7 @@
 
       "clock" = {
         "interval" = 60;
-        "format" = "{:%H.%M}";
+        "format" = "{:%H:%M}";
         "tooltip" = true;
         "tooltip-format" = "{:%Y-%m-%d}";
       };

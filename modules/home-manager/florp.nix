@@ -32,7 +32,7 @@
         in {
           AutofillAddressEnabled = true;
           AutofillCreditCardEnabled = false;
-          Bookmark = [ # Make this in preferences so it appears in the toolbar
+          Bookmarks = [ # Make this in preferences so it appears in the toolbar
             {
               Title = "OpenAI";
               URL = "https://openai.com/";
@@ -73,7 +73,7 @@
             {
               Title = "Github";
               URL = "https://github.com/";
-              Folder = "Programmin";
+              Folder = "Programming";
             }
           ];
           Cookies = "reject-trackers";
