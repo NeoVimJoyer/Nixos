@@ -7,7 +7,7 @@
 
   imports = [
     ./../../modules/home-manager/default.nix
-    ./../../modules/home-manager/plasma.nix
+    ./../../modules/home-manager/sway/default.nix
   ];
 
   home.packages = [ ];

@@ -15,7 +15,7 @@
     };
     systemPackages = with pkgs; [
       mangohud
-      protonup
+      #protonup
     ];
   };
 }

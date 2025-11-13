@@ -19,50 +19,66 @@
         "battery"
       ];
 
+      "custom/icon" = {
+        format = "󱄅";
+        tooltip = false; # Eventually add a dropdown window
+      };
+
+      "clock" = {
+        "interval" = 60;
+        "format" = "{:%H.%M}";
+        "tooltip" = true;
+        "tooltip-format" = "{:%Y-%m-%d}";
+      };
+
+      "network" = {
+        format = "{ifname}";
+        format-wifi = "  {essid} ({signalStrength}%)";
+        format-ethernet = "󰈀  {ifname}";
+        format-disconnected = "󰤯  Disconnected";
+        tooltip = true;
+        tooltip-format = "{ifname}";
+        max-length = 50;
+      };
+
+      "pulseaudio" = {
+        format = "  {volume}%";
+        format-muted = " Muted";
+        tooltip = false;
+      };
+
       "sway/workspaces" = {
         disable-scroll = true;
         all-outputs = true;
-        format = "";
-        format-icons = {
-          "1" = "[]";
-          "2" = "[]";
-          "3" = "[]";
-          "4" = "[]";
-          "5" = "[]";
-          "6" = "[]";
-          "7" = "[]";
-          "8" = "[]";
-          "9" = "[]";
-          "10" = "[]";
-        };
+        format = "";
       };
 
       "temperature" = {
-        format = "[] {temperatureC}°C";
-        format-alt = "[] {temperatureF}°F";
+        format = " {temperatureC}°C";
+        format-alt = " {temperatureF}°F";
         tooltip = false;
       };
       "cpu" = {
         interval = 10;
-        format = "[] {usage}%";
+        format = " {usage}%";
         max-length = 10;
       };
       "memory" = {
         interval = 30;
-        format = "[] {percentage}%";
+        format = "  {percentage}%";
         tooltip = true;
         tooltip-format = "{total} Available";
         max-length = 10;
       };
       "disk" = {
-        format = "[] {percentage_used}%";
+        format = " {percentage_used}%";
       };
       "battery" = {
-        format = "[] {capacity}%";
+        format = "⏻ {capacity}%";
         tooltip = true;
         tooltip-format = "{time}";
       };
     };
-    #style = ./style.css;
+    style = ./style.css;
   };
 }
