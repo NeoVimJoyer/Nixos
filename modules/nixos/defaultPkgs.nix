@@ -13,6 +13,10 @@
     };
   };
 
+  imports = [
+    ./florp.nix
+  ];
+
   config = lib.mkIf config.defaultPkgs.enable {
     environment.systemPackages = [
       inputs.nvf.packages.${pkgs.system}.default
