@@ -6,6 +6,8 @@ let
   menu = "wmenu-run";
   networkmanager = "nmtui";
   fileexplorer = "dolphin";
+  browser = "floorp";
+  browsersecure = "tor";
 
   lock = "swaylock";
 in
@@ -61,8 +63,8 @@ in
         "${mod}+f+e" = "exec ${fileexplorer}";
 
         ### Browsers
-        "${mod}+b+p" = "exec zen";
-        "${mod}+b+s" = "exec tor-browser";
+        "${mod}+b+p" = "exec ${browser}";
+        "${mod}+b+s" = "exec ${browsersecure}";
 
         ### Utility
         "${mod}+e" = "kill";

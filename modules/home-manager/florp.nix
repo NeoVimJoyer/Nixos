@@ -1,4 +1,4 @@
-{ config, lib, inputs, ... }:
+{ config, lib, ... }:
 
 {
   config = lib.mkIf config.defaultPkgs.enable {
