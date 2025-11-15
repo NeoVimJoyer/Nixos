@@ -17,10 +17,11 @@
         "memory"
         "disk"
         "battery"
+        "custom/power"
       ];
 
       "custom/icon" = {
-        format = "󱄅";
+        format = "";
         tooltip = false; # Eventually add a dropdown window
       };
 
@@ -50,7 +51,7 @@
       "sway/workspaces" = {
         disable-scroll = true;
         all-outputs = true;
-        format = "";
+        format = "{name}";
       };
 
       "temperature" = {
@@ -60,7 +61,7 @@
       };
       "cpu" = {
         interval = 10;
-        format = " {usage}%";
+        format = "  {usage}%";
         max-length = 10;
       };
       "memory" = {
@@ -71,13 +72,18 @@
         max-length = 10;
       };
       "disk" = {
-        format = " {percentage_used}%";
+        format = "  {percentage_used}%";
       };
       "battery" = {
-        format = "⏻ {capacity}%";
+        format = "󰂀 {capacity}%";
         tooltip = true;
         tooltip-format = "{time}";
       };
+      "custom/power" = { # Eventually make it turn off the computer
+        format = "⏻";
+        tooltip = false;
+      };
+
     };
     style = ./style.css;
   };

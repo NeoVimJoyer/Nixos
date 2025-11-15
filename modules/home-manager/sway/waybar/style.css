@@ -1,4 +1,74 @@
+@define-color tron #7dfdfe;
+
 * {
   font-family: "Maple Mono";
   font-size: 12;
+  min-height: 12px;
+  min-width: 0px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+}
+
+window#waybar {
+  transition-property: black;
+  transition-duration: 0.5s;
+  border-radius: 8px;
+  border: 2px solid @tron;
+  background: black;
+  color: @tron;
+}
+
+#workspaces {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: @tron;
+}
+
+menu,
+tooltip {
+  border-radius: 8px;
+  padding: 2px;
+  border: 1px solid @tron;
+  background: black;
+}
+
+menu label,
+tooltip label {
+  font-size: 14px;
+  color: @tron;
+}
+
+.modules-right,
+.modules-left {
+  margin: 6px 10px 6px 10px;
+}
+
+#custom-icon,
+#clock,
+#network,
+#pulseaudio,
+#temperature,
+#cpu,
+#memory,
+#disk,
+#battery,
+#custom-power {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#workspaes {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#custom-icon {
+  font-size: 15px;
 }

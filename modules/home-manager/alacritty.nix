@@ -6,13 +6,28 @@
     fonts.fontconfig.enable = true;
     programs.alacritty = {
       enable = true;
-      theme = "oxocarbon";
       settings = {
-        window.opacity = 0.9;
+        window.opacity = 0.7;
         font.normal = {
           #family = "Jetbrains Mono Nerd Font";
           family = "Maple Mono";
           style = "Regular";
+        };
+        colors = {
+          primary ={
+            foreground = "#FFFFFF";
+            background = "#000000";
+          };
+          normal = {
+            black = "#000000";
+            red = "#f91e0b";
+            green = "#00ef10";
+            yellow = "#f6e035";
+            blue = "#7DFDFE";
+            magenta = "#6507f5";
+            cyan = "#2f8ca3";
+            white = "#FFFFFF";
+          };
         };
       };
     };

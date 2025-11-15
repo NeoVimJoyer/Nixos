@@ -71,6 +71,7 @@ in
         "${mod}+Shift+e" = "exit";
         "${mod}+f+u" = "fullscreen";
         "${mod}+r" = "reboot";
+        "${mod}+Shift+r" = "shutdown now";
 
         ### Moving around
         # Instead of direction keys, use home row keys like nvim

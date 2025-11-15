@@ -3,7 +3,6 @@
 {
   vim = {
     enableLuaLoader = true; # Faster loading times
-
     diagnostics = {
       enable = true;
       config = {
@@ -19,8 +18,25 @@
     syntaxHighlighting = true;
     theme = {
       enable = true;
-      name = "oxocarbon";
-      style = "dark";
+      name = "base16";
+      base16-colors = {
+        base00 = "#000000";
+        base01 = "#FFFFFF";
+        base02 = "#7dfdfe";
+        base03 = "#6b6b6b";
+        base04 = "#7dfdfe";
+        base05 = "#7dfdfe";
+        base06 = "#7dfdfe";
+        base07 = "#FFFFFF";
+        base08 = "#6b6b6b";
+        base09 = "#FFFFFF";
+        base0A = "#7dfdfe";
+        base0B = "#00ef10";
+        base0C = "#f91e0b";
+        base0D = "#FFFFFF";
+        base0E = "#f91e0b";
+        base0F = "#FFFFFF";
+      };
     };
 
     # Plugins
