@@ -22,7 +22,7 @@
       base16-colors = {
         base00 = "#000000";
         base01 = "#9a9a9a";
-        base02 = "#7dfdfe";
+        base02 = "#000000";
         base03 = "#6b6b6b";
         base04 = "#7dfdfe";
         base05 = "#7dfdfe";
