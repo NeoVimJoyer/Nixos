@@ -15,7 +15,7 @@
         };
         colors = {
           primary ={
-            foreground = "#FFFFFF";
+            foreground = "#7dfdfe";
             background = "#000000";
           };
           normal = {
@@ -23,7 +23,7 @@
             red = "#f91e0b";
             green = "#00ef10";
             yellow = "#f6e035";
-            blue = "#7DFDFE";
+            blue = "#7dfdfe";
             magenta = "#6507f5";
             cyan = "#2f8ca3";
             white = "#FFFFFF";
