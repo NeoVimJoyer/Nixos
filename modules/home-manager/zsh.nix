@@ -19,9 +19,12 @@
         nv = "nvim";
         tr = "tree";
         ff = "fastfetch";
+        
+        dev = "nix develop";
+
         py = "python3";
         veiw = "feh";
-        capture = "cheese";
+        
         shut = "shutdown now";
       };
       history.size = 10000;

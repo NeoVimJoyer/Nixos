@@ -82,6 +82,7 @@
       "custom/power" = { # Eventually make it turn off the computer
         format = "⏻";
         tooltip = false;
+        on-click = "shutdown now";
       };
 
     };
