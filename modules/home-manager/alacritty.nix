@@ -7,9 +7,8 @@
     programs.alacritty = {
       enable = true;
       settings = {
-        window.opacity = 0.7;
+        window.opacity = 0.5;
         font.normal = {
-          #family = "Jetbrains Mono Nerd Font";
           family = "Maple Mono";
           style = "Regular";
         };

@@ -21,7 +21,7 @@
       name = "base16";
       base16-colors = {
         base00 = "#000000";
-        base01 = "#FFFFFF";
+        base01 = "#6b6b6b";
         base02 = "#7dfdfe";
         base03 = "#6b6b6b";
         base04 = "#7dfdfe";

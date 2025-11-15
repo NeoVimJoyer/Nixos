@@ -31,8 +31,8 @@ in
 
       window.titlebar = false;
       gaps = {
-        outer = 10;
-        inner = 10;
+        outer = 15;
+        inner = 25;
       };
       colors = {
         unfocused = {
