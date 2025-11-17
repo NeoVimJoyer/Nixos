@@ -8,7 +8,6 @@ let
   fileexplorer = "dolphin";
   browser = "floorp";
   browsersecure = "tor";
-
   lock = "swaylock";
 in
 {

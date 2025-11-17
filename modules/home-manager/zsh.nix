@@ -13,7 +13,6 @@
       syntaxHighlighting.enable = true;
 
       shellAliases = {
-        #nix = "nom";
         ls = "eza";
         cl = "clear";
         nv = "nvim";
@@ -21,8 +20,9 @@
         ff = "fastfetch";
         
         dev = "nix develop";
+        dev-g = "nix develop ~/code/flake/";
 
-        py = "python3";
+        py = "python";
         veiw = "feh";
         
         shut = "shutdown now";

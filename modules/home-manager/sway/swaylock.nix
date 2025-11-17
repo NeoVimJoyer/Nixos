@@ -1,37 +1,34 @@
 { ... }:
 
 let
-  # Gruvbox colorscheme
-  grey = "3c3836";
-  light-grey = "7c6f64";
-  white = "dfbf8e";
-  red = "cc241d";
-  green = "98971a";
-  yellow = "d79921";
-  blue = "458588";
-  purple = "b16286";
-  aqua = "689d6a";
-  orange = "d65d0e";
+  # Tron colorscheme
+  black = "000000";
+  white = "FFFFFF";
+  red = "f91e0b";
+  yellow = "f6e035";
+  blue = "7dfdfe";
+  cyan = "2f8ca3";
+  green = "00ef10";
 in
 {
   programs.swaylock = {
     enable = true;
     settings = {
       disable-caps-lock-text = true;
-      color = "${grey}";
+      color = "${black}";
       bs-hl-color = "${red}";
       indicator-idle-visible = true;
       indicator-radius = 100;
       indicator-thickness = 15;
       inside-color = "${blue}";
-      inside-clear-color = "${orange}";
-      inside-ver-color = "${aqua}";
+      inside-clear-color = "${yellow}";
+      inside-ver-color = "${green}";
       inside-wrong-color = "${red}";
-      key-hl-color = "${aqua}";
+      key-hl-color = "${cyan}";
       layout-text-color = "${white}";
       ring-color = "${blue}";
-      ring-clear-color = "${orange}";
-      ring-ver-color = "${aqua}";
+      ring-clear-color = "${yellow}";
+      ring-ver-color = "${green}";
       ring-wrong-color = "${red}";
       text-color = "${white}";
     };
