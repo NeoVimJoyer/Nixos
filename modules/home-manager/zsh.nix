@@ -20,8 +20,9 @@
         ff = "fastfetch";
         
         dev = "nix develop";
-        dev-g = "nix develop ~/code/flake/";
-
+        dev-c = "nix develop ~/dev-flakes/c/";
+        dev-py = "nix develop ~/dev-flakes/python/";
+        
         py = "python";
         veiw = "feh";
         

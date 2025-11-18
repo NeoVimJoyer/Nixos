@@ -22,6 +22,7 @@
       pkgs.feh
       pkgs.tor-browser
       pkgs.kdePackages.dolphin
+      pkgs.grim
     ];
   };
 }

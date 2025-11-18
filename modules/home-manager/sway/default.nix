@@ -9,6 +9,7 @@ let
   browser = "floorp";
   browsersecure = "tor";
   lock = "swaylock";
+  #screenshot = "grim";
 in
 {
   imports = [

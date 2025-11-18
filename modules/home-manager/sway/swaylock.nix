@@ -15,7 +15,8 @@ in
     enable = true;
     settings = {
       disable-caps-lock-text = true;
-      color = "${black}";
+      #color = "${black}";
+      image = "~/config/wallpapers/tron.jpg";
       bs-hl-color = "${red}";
       indicator-idle-visible = true;
       indicator-radius = 100;
