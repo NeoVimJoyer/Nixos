@@ -12,6 +12,14 @@
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
 
+      initContent = ''
+        if [[ $LAST_COMMAND != "" ]]; then
+          precmd() { print "end of line" }
+        fi
+
+        preexec() { LAST_COMMAND="$1" }
+      ''; # Not working for some reason
+
       shellAliases = {
         ls = "eza";
         cl = "clear";
