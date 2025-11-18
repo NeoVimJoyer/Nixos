@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, lib, ... }:
 
 let
   mod = "Mod4";
@@ -8,8 +8,15 @@ let
   fileexplorer = "dolphin";
   browser = "floorp";
   browsersecure = "tor";
-  lock = "swaylock";
   #screenshot = "grim";
+
+  lock = pkgs.writeShellScriptBin "lock" ''
+    grim ~/config/wallpapers/screenshot.jpg
+    magick ~/config/wallpapers/screenshot.jpg -blur 0x4 ~/config/wallpapers/blurred.jpg
+    swaylock
+    rm ~/config/wallpapers/screenshot.jpg
+    rm ~/config/wallpapers/blurred.jpg
+  '';
 in
 {
   imports = [
@@ -58,7 +65,7 @@ in
         ### Apps
         "${mod}+t" = "exec ${terminal}";
         "${mod}+m" = "exec ${menu}";
-        "${mod}+c" = "exec ${lock}";
+        "${mod}+c" = "exec ${lib.getExe lock}";
         "${mod}+n" = "exec ${networkmanager}";
         "${mod}+f+e" = "exec ${fileexplorer}";
 
