@@ -8,7 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nvf = {
-      url = "path:./flakes/nvf";
+      url = "path:./nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     plasma-manager = {
