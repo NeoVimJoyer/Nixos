@@ -26,13 +26,14 @@
         nv = "nvim";
         tr = "tree";
         ff = "fastfetch";
+        veiw = "feh";
         
         dev = "nix develop";
         dev-c = "nix develop ~/dev-flakes/c/";
         dev-py = "nix develop ~/dev-flakes/python/";
         
         py = "python";
-        veiw = "feh";
+        gpp = "g++";
         
         shut = "shutdown now";
       };

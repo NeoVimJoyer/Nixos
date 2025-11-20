@@ -8,7 +8,7 @@ let
   fileexplorer = "dolphin";
   browser = "floorp";
   browsersecure = "tor";
-  #screenshot = "grim";
+  screenshot = "grim ~/Downloads/";
 
   lock = pkgs.writeShellScriptBin "lock" ''
     grim ~/config/wallpapers/screenshot.jpg
@@ -77,8 +77,9 @@ in
         "${mod}+e" = "kill";
         "${mod}+Shift+e" = "exit";
         "${mod}+f+u" = "fullscreen";
-        "${mod}+r" = "reboot";
-        "${mod}+Shift+r" = "shutdown now";
+        "${mod}+r" = "exec reboot";
+        "${mod}+Shift+r" = "exec shutdown now";
+        "${mod}+s" = "exec ${screenshot}";
 
         ### Moving around
         # Instead of direction keys, use home row keys like nvim
