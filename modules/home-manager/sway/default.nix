@@ -3,7 +3,7 @@
 let
   mod = "Mod4";
   terminal = "alacritty";
-  menu = "albert";
+  menu = "rofi -show drun";
   fileexplorer = "dolphin";
   browser = "floorp";
   browsersecure = "tor-browser";
@@ -98,12 +98,14 @@ in
         "${mod}+Up" = "resize grow height 10px";
 
         "${mod}+Space" = "exec ${menu}";
+        "${mod}+c" = "exec ${lib.getExe lock}";
         "${mod}+e" = "kill";
-        "${mod}+Enter" = "${terminal}";
-        "${mod}+f" = "${fileexplorer}";
+        "${mod}+Return" = "exec ${terminal}";
+        "${mod}+f" = "exec ${fileexplorer}";
         "${mod}+n" = "exec nvim";
 
-        # Audio
+        "${mod}+a+p" = "exec pactl set-sink-volume \@DEFAULT_SINK@ +5%";
+        "${mod}+a+d" = "exec pactl set-sink-volume \@DEFAULT_SINK@ -5%";
 
         "${mod}+b" = "exec ${browser}";
         "${mod}+Shift+b" = "exec ${browsersecure}";
@@ -113,13 +115,11 @@ in
         "${mod}+m" = "exec teams-for-linux";
 
         "${mod}+u+s" = "exec ${screenshot}";
-        "${mod}+u+l" = "${lock}";
         "${mod}+u+f" = "fullscreen";
         "${mod}+u+r" = "exec reboot";
         "${mod}+u+p" = "exec shutdown";
-        #"${mod}+u+b+" = "";
-        #"${mod}+u+b+" = "";
-        #"${mod}+u+k" = "";
+        "${mod}+u+k+p" = "exec brightnessctl set 5%+";
+        "${mod}+u+k+d" = "exec brightnessctl set 5%-";
       };
     };
   };
