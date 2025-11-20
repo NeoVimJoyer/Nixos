@@ -3,13 +3,11 @@
 let
   mod = "Mod4";
   terminal = "alacritty";
-  menu = "wmenu-run";
-  networkmanager = "nmtui";
+  menu = "albert";
   fileexplorer = "dolphin";
   browser = "floorp";
-  browsersecure = "tor";
-  screenshot = "grim ~/Downloads/";
-
+  browsersecure = "tor-browser";
+  screenshot = "grim ~/Downloads/screenshot_$(date +'%Y-m%-%d_%H-%M-%S').png";
   lock = pkgs.writeShellScriptBin "lock" ''
     grim ~/config/wallpapers/screenshot.jpg
     magick ~/config/wallpapers/screenshot.jpg -blur 0x4 ~/config/wallpapers/blurred.jpg
@@ -62,27 +60,6 @@ in
       bars = [ ];
 
       keybindings = {
-        ### Apps
-        "${mod}+t" = "exec ${terminal}";
-        "${mod}+m" = "exec ${menu}";
-        "${mod}+c" = "exec ${lib.getExe lock}";
-        "${mod}+n" = "exec ${networkmanager}";
-        "${mod}+f+e" = "exec ${fileexplorer}";
-
-        ### Browsers
-        "${mod}+b+p" = "exec ${browser}";
-        "${mod}+b+s" = "exec ${browsersecure}";
-
-        ### Utility
-        "${mod}+e" = "kill";
-        "${mod}+Shift+e" = "exit";
-        "${mod}+f+u" = "fullscreen";
-        "${mod}+r" = "exec reboot";
-        "${mod}+Shift+r" = "exec shutdown now";
-        "${mod}+s" = "exec ${screenshot}";
-
-        ### Moving around
-        # Instead of direction keys, use home row keys like nvim
         "${mod}+h" = "focus left";
         "${mod}+j" = "focus down";
         "${mod}+k" = "focus up";
@@ -93,7 +70,6 @@ in
         "${mod}+Shift+k" = "move up";
         "${mod}+Shift+l" = "move right";
 
-        ### Workspaces
         "${mod}+1" = "workspace number 1";
         "${mod}+2" = "workspace number 2";
         "${mod}+3" = "workspace number 3";
@@ -115,6 +91,35 @@ in
         "${mod}+Shift+8" = "move container to workspace number 8";
         "${mod}+Shift+9" = "move container to workspace number 9";
         "${mod}+Shift+0" = "move container to workspace number 10";
+
+        "${mod}+Left" = "resize shrink width 10px";
+        "${mod}+Right" = "resize grow width 10px";
+        "${mod}+Down" = "resize shrink height 10px";
+        "${mod}+Up" = "resize grow height 10px";
+
+        "${mod}+Space" = "exec ${menu}";
+        "${mod}+e" = "kill";
+        "${mod}+Enter" = "${terminal}";
+        "${mod}+f" = "${fileexplorer}";
+        "${mod}+n" = "exec nvim";
+
+        # Audio
+
+        "${mod}+b" = "exec ${browser}";
+        "${mod}+Shift+b" = "exec ${browsersecure}";
+
+        "${mod}+g" = "exec steam";
+
+        "${mod}+m" = "exec teams-for-linux";
+
+        "${mod}+u+s" = "exec ${screenshot}";
+        "${mod}+u+l" = "${lock}";
+        "${mod}+u+f" = "fullscreen";
+        "${mod}+u+r" = "exec reboot";
+        "${mod}+u+p" = "exec shutdown";
+        #"${mod}+u+b+" = "";
+        #"${mod}+u+b+" = "";
+        #"${mod}+u+k" = "";
       };
     };
   };
