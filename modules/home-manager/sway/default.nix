@@ -117,7 +117,7 @@ in
         "${mod}+u+s" = "exec ${screenshot}";
         "${mod}+u+f" = "fullscreen";
         "${mod}+u+r" = "exec reboot";
-        "${mod}+u+p" = "exec shutdown";
+        "${mod}+u+p" = "exec shutdown now";
         "${mod}+u+k+p" = "exec brightnessctl set 5%+";
         "${mod}+u+k+d" = "exec brightnessctl set 5%-";
       };
