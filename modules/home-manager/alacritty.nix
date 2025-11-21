@@ -7,7 +7,7 @@
     programs.alacritty = {
       enable = true;
       settings = {
-        #window.opacity = 0.4;
+        window.opacity = 0.4;
         font.normal = {
           family = "Maple Mono";
           style = "Regular";

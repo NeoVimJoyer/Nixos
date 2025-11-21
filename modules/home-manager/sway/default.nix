@@ -39,7 +39,6 @@ in
         outer = 15;
         inner = 25;
       };
-      opacity = 0.7;
       colors = {
         unfocused = {
           background = "#000000";
