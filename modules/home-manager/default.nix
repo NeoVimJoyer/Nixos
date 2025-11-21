@@ -16,5 +16,6 @@
     ./eza.nix
     ./lf.nix
     ./floorp.nix
+    ./rofi.nix
   ];
 }

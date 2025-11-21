@@ -192,11 +192,11 @@
         "nvf": "nvf_2"
       },
       "locked": {
-        "path": "./flakes/nvf",
+        "path": "./nvf",
         "type": "path"
       },
       "original": {
-        "path": "./flakes/nvf",
+        "path": "./nvf",
         "type": "path"
       },
       "parent": []
