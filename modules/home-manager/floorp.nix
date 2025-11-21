@@ -60,6 +60,11 @@
               Folder = "School";
             }
             {
+              Title = "Btech Canvas";
+              URL = "https://btech.instructure.com/";
+              Folder = "School";
+            }
+            {
               Title = "Powerschool";
               URL = "https://powerschool.ccsdut.org/";
               Folder = "School";

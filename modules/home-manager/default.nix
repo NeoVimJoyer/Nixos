@@ -15,6 +15,6 @@
     ./alacritty.nix
     ./eza.nix
     ./lf.nix
-    ./florp.nix
+    ./floorp.nix
   ];
 }
