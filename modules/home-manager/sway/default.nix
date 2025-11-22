@@ -110,7 +110,8 @@ in
         "${mod}+b" = "exec ${browser}";
         "${mod}+Shift+b" = "exec ${browsersecure}";
 
-        "${mod}+g" = "exec steam";
+        "${mod}+g+s" = "exec steam";
+        "${mod}+g+d" = "exec discord";
 
         "${mod}+m" = "exec teams-for-linux";
 
