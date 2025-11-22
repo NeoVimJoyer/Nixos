@@ -5,7 +5,7 @@
     ./hardware-configuration.nix
     ./../../modules/nixos/default.nix
     ./../../modules/nixos/sway/default.nix
-    ./../../modules/nixos/steam.nix
+    ./../../modules/nixos/gaming.nix
   ];
 
   callum.autologin.enable = true;
