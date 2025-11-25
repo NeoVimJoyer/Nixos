@@ -34,7 +34,7 @@
         base0B = "#00ef10";
         base0C = "#f6e035";
         base0D = "#FFFFFF";
-        base0E = "#f91e0b";
+        base0E = "#f6e035";
         base0F = "#FFFFFF";
       };
     };
