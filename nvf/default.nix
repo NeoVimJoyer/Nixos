@@ -28,11 +28,11 @@
         base05 = "#7dfdfe";
         base06 = "#7dfdfe";
         base07 = "#FFFFFF";
-        base08 = "#f6e035";
+        base08 = "#f91e0b";
         base09 = "#FFFFFF";
         base0A = "#7dfdfe";
         base0B = "#00ef10";
-        base0C = "#f91e0b";
+        base0C = "#f6e035";
         base0D = "#FFFFFF";
         base0E = "#f91e0b";
         base0F = "#FFFFFF";
