@@ -101,7 +101,7 @@ in
         "${mod}+c" = "exec ${lib.getExe lock}";
         "${mod}+e" = "kill";
         "${mod}+Return" = "exec ${terminal}";
-        "${mod}+f" = "exec ${fileexplorer}";
+        "${mod}+Shift+f" = "exec ${fileexplorer}";
         "${mod}+n" = "exec nvim";
 
         "${mod}+a+p" = "exec pactl set-sink-volume \@DEFAULT_SINK@ +5%";
