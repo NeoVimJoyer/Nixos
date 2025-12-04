@@ -115,7 +115,7 @@ in
 
         "${mod}+m" = "exec teams-for-linux";
 
-        "${mod}+u+s" = "exec ${screenshot}";
+        "${mod}+u+t" = "exec ${screenshot}";
         "${mod}+u+f" = "fullscreen";
         "${mod}+u+r" = "exec reboot";
         "${mod}+u+p" = "exec shutdown now";
