@@ -27,6 +27,8 @@
         tr = "tree";
         ff = "fastfetch";
         veiw = "feh";
+
+        clmk = "make clean; make; make run";
         
         dev = "nix develop";
         dev-c = "nix develop ~/dev-flakes/c/";
