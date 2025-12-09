@@ -28,14 +28,18 @@
         ff = "fastfetch";
         veiw = "feh";
 
-        clmk = "make clean; make; make run";
-        
         dev = "nix develop";
         dev-c = "nix develop ~/dev-flakes/c/";
         dev-py = "nix develop ~/dev-flakes/python/";
         
         py = "python";
         gpp = "g++";
+
+        templates = "~/templates/";
+        cptempc = "cp ~/templates/c/* .";
+        cpmkc = "cp ~/templates/c/Makefile .";
+        cptempcpp = "cp ~/templates/cpp/* .";
+        cpmkcpp = "cp ~/templates/cpp/Makefile .";
         
         shut = "shutdown now";
       };
