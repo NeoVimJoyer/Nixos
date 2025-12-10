@@ -19,12 +19,12 @@ in
 {
   options.webcam.enable = lib.mkEnableOption "enables cheese(a webcam thingy)" // { default = true; };
 
-  config = {
-    imports = [
-      ./waybar/default.nix
-      ./swaylock.nix
-    ];
+  imports = [
+    ./waybar/default.nix
+    ./swaylock.nix
+  ];
 
+  config = {
     # Wallpaper app
     services.swww.enable = true;
 
