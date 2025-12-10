@@ -7,6 +7,7 @@
   imports = [ 
     (modulesPath + "/hardware/network/broadcom-43xx.nix")
     (modulesPath + "/installer/scan/not-detected.nix")
+    ./../../modules/hardware/camera/intel.nix
   ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
