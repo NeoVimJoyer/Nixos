@@ -1,8 +1,7 @@
-{ ... }:
+{ pkgs, ... }:
 
 let
   # Tron colorscheme
-  black = "000000";
   white = "FFFFFF";
   red = "f91e0b";
   yellow = "f6e035";
@@ -13,24 +12,28 @@ in
 {
   programs.swaylock = {
     enable = true;
+    package = pkgs.swaylock-effects;
     settings = {
+      screenshots = true;
+      effect-blur = "5x5";
+      fade-in = .3;
+
       disable-caps-lock-text = true;
-      image = "~/config/wallpapers/blurred.jpg";
-      bs-hl-color = "${red}";
+      bs-hl-color = red;
       indicator-idle-visible = true;
       indicator-radius = 100;
       indicator-thickness = 15;
-      inside-color = "${blue}";
-      inside-clear-color = "${yellow}";
-      inside-ver-color = "${green}";
-      inside-wrong-color = "${red}";
-      key-hl-color = "${cyan}";
-      layout-text-color = "${white}";
-      ring-color = "${blue}";
-      ring-clear-color = "${yellow}";
-      ring-ver-color = "${green}";
-      ring-wrong-color = "${red}";
-      text-color = "${white}";
+      inside-color = blue;
+      inside-clear-color = yellow;
+      inside-ver-color = green;
+      inside-wrong-color = red;
+      key-hl-color = cyan;
+      layout-text-color = white;
+      ring-color = blue;
+      ring-clear-color = yellow;
+      ring-ver-color = green;
+      ring-wrong-color = red;
+      text-color = white;
     };
   };
 }

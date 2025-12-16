@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ lib, config, ... }:
 
 let
   mod = "Mod4";
@@ -8,13 +8,6 @@ let
   browser = "floorp";
   browsersecure = "tor-browser";
   screenshot = "grim ~/Downloads/screenshot_$(date +'%Y-m%-%d_%H-%M-%S').png";
-  lock = pkgs.writeShellScriptBin "lock" ''
-    grim ~/config/wallpapers/screenshot.jpg
-    magick ~/config/wallpapers/screenshot.jpg -blur 0x4 ~/config/wallpapers/blurred.jpg
-    swaylock
-    rm ~/config/wallpapers/screenshot.jpg
-    rm ~/config/wallpapers/blurred.jpg
-  '';
 in
 {
   imports = [
@@ -98,7 +91,7 @@ in
         "${mod}+Up" = "resize grow height 10px";
 
         "${mod}+Space" = "exec ${menu}";
-        "${mod}+z" = "exec ${lib.getExe lock}";
+        "${mod}+z" = "exec ${lib.getExe config.programs.swaylock.package}";
         "${mod}+e" = "kill";
         "${mod}+Return" = "exec ${terminal}";
         "${mod}+Shift+f" = "exec ${fileexplorer}";
