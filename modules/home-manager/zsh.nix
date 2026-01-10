@@ -19,6 +19,13 @@
       ''; # Not working for some reason
 
       shellAliases = {
+        lc = "sl";
+        vn = "sl";
+        mr = "sl";
+        pc = "sl";
+        vm = "sl";
+        km = "sl";
+
         ls = "eza";
         cl = "clear";
         nv = "nvim";
@@ -33,10 +40,10 @@
         py = "python";
         gpp = "g++";
 
-        templates = "~/templates/";
-        cptempc = "cp ~/templates/c/* .";
+        mk = "make";
+        cptempc = "cp ~/templates/c/* . -rf";
+        cptempcpp = "cp ~/templates/cpp/* . -rf";
         cpmkc = "cp ~/templates/c/Makefile .";
-        cptempcpp = "cp ~/templates/cpp/* .";
         cpmkcpp = "cp ~/templates/cpp/Makefile .";
         
         shut = "shutdown now";

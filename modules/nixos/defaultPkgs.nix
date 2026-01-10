@@ -23,6 +23,8 @@
       pkgs.tor-browser
       pkgs.kdePackages.dolphin
       pkgs.zip
+      pkgs.unzip
+      pkgs.sl
     ];
   };
 }

@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
     ./../../modules/nixos/default.nix
     ./../../modules/nixos/sway/default.nix
+    ./../../modules/nixos/ai.nix
   ];
 
   environment.systemPackages = with pkgs; [
