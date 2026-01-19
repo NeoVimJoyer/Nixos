@@ -7,8 +7,10 @@
 
   imports = [
     ./../../modules/home-manager/default.nix
-    ./../../modules/home-manager/sway/default.nix
+    ./../../modules/home-manager/sway/light/default.nix
   ];
+
+  theme.light.enable = true;
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

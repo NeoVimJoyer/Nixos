@@ -1,7 +1,7 @@
 { lib, config, ... }:
 
 {
-  options.theme.light.enable = lib.mkEnableOption "enables light theme, tron is default" // { default = true; };
+  options.theme.light.enable = lib.mkEnableOption "enables light theme, tron is default" // { default = false; };
 
   config = lib.mkIf config.defaultPkgs.enable {
     # Declared in defaultPkgs.nix

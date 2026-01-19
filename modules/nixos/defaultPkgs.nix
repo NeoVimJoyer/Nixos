@@ -13,10 +13,6 @@
     };
   };
 
-  imports = [
-    ./nvf.nix
-  ];
-
   config = lib.mkIf config.defaultPkgs.enable {
     environment.systemPackages = [
       pkgs.tree 

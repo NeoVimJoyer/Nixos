@@ -10,10 +10,6 @@ let
   screenshot = "grim ~/Downloads/screenshot_$(date +'%Y-m%-%d_%H-%M-%S').png";
 in
 {
-  imports = [
-    ./swaylock.nix
-  ];
-
   wayland.windowManager.sway = {
     enable = true;
     config = {

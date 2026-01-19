@@ -6,9 +6,13 @@
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nvf = {
-      url = "path:./nvf";
+    }; 
+    nvf_tron = {
+      url = "path:./nvf/tron/";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };  
+    nvf_light = {
+      url = "path:./nvf/light/";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     plasma-manager = {
