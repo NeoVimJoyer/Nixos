@@ -1,6 +1,8 @@
 { lib, config, ... }:
 
 {
+  options.theme.light.enable = lib.mkEnableOption "enables light theme, tron is default" // { default = true; };
+
   config = lib.mkIf config.defaultPkgs.enable {
     # Declared in defaultPkgs.nix
     fonts.fontconfig.enable = true;
@@ -12,7 +14,22 @@
           family = "Maple Mono";
           style = "Regular";
         };
-        colors = {
+        colors = if config.theme.light.enable then {
+          primary ={
+            foreground = "#1f2335";
+            background = "#c0caf5";
+          };
+          normal = {
+            black = "#1f2335";
+            red = "#f7768e";
+            green = "#9ece6a";
+            yellow = "#e0af68";
+            blue = "#7aa2f7";
+            magenta = "#9d7cd8";
+            cyan = "#7dcfff";
+            white = "#c0caf5";
+          };
+        } else {
           primary ={
             foreground = "#7dfdfe";
             background = "#000000";

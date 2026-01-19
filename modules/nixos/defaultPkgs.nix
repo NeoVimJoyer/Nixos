@@ -13,9 +13,12 @@
     };
   };
 
+  imports = [
+    ./nvf.nix
+  ];
+
   config = lib.mkIf config.defaultPkgs.enable {
     environment.systemPackages = [
-      inputs.nvf.packages.${pkgs.system}.default
       pkgs.tree 
       pkgs.fastfetch
       pkgs.git
