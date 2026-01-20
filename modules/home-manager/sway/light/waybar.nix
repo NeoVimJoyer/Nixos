@@ -103,7 +103,7 @@ in
       }
 
       window#waybar {
-        transition-property: ${colors.black};
+        transition-property: black;
         transition-duration: 0.5s;
         border-bottom: 2px solid ${colors.black};
         background: ${colors.white};

@@ -4,7 +4,7 @@
   imports = [
     ../default.nix
     ./swaylock.nix
-    ./waybar/default.nix
+    ./waybar.nix
   ];
 
   # Wallpaper app
