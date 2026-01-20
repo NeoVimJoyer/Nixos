@@ -19,7 +19,7 @@
         { command = "swww img ~/config/wallpapers/tron.jpg"; }
       ];
 
-      window.titlebar = false;
+      window.titlebar = false; 
       gaps = {
         outer = 15;
         inner = 25;

@@ -1,5 +1,8 @@
 { lib, config, ... }:
 
+let
+  light = import ./../colors/light.nix;
+in
 {
   options.theme.light.enable = lib.mkEnableOption "enables light theme, tron is default" // { default = false; };
 
@@ -9,25 +12,25 @@
     programs.alacritty = {
       enable = true;
       settings = {
-        window.opacity = 0.4;
+        window.opacity = if config.theme.light.enable then 1 else 0.4;
         font.normal = {
           family = "Maple Mono";
           style = "Regular";
         };
         colors = if config.theme.light.enable then {
           primary ={
-            foreground = "#1f2335";
-            background = "#c0caf5";
+            foreground = "${light.black}";
+            background = "${light.white}";
           };
           normal = {
-            black = "#1f2335";
-            red = "#f7768e";
-            green = "#9ece6a";
-            yellow = "#e0af68";
-            blue = "#7aa2f7";
-            magenta = "#9d7cd8";
-            cyan = "#7dcfff";
-            white = "#c0caf5";
+            black = "${light.black}";
+            red = "${light.red}";
+            green = "${light.green}";
+            yellow = "${light.brown}";
+            blue = "${light.blue}";
+            magenta = "${light.purple}";
+            cyan = "${light.cyan}";
+            white = "${light.white}";
           };
         } else {
           primary ={

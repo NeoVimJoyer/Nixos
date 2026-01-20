@@ -1,7 +1,7 @@
 { ... }:
 
 let
-  colors = import ./../../../../colors/light.nix;
+  colors = import ./../../../colors/light.nix;
 in
 {
   programs.waybar = {
@@ -165,7 +165,7 @@ in
 
       #workspaces button.active,
       #workspaces button.focused {
-        color: ${colors.red-wallpaper};
+        color: ${colors.red};
       }
     '';
   };

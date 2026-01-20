@@ -1,5 +1,8 @@
 { ... }:
 
+let
+  colors = import ./../../../colors/light.nix;
+in
 {
   imports = [
     ../default.nix
@@ -19,21 +22,25 @@
         { command = "swww img ~/config/wallpapers/light.png"; }
       ];
 
-      window.titlebar = false;
+      window.titlebar = false; 
+      gaps = {
+        outer = 5;
+        inner = 15;
+      };
       colors = {
-        unfocused = {
-          background = "#ffffff";
-          border = "#ffffff";
-          childBorder = "#ffffff";
-          indicator = "#ffffff";
-          text = "#000000";
+        unfocused = { 
+          background = "${colors.white}";
+          border = "${colors.black}";
+          childBorder = "${colors.black}";
+          indicator = "${colors.white}";
+          text = "${colors.black}";
         };
-        focused = {
-          background = "#ffffff";
-          border = "#ffffff";
-          childBorder = "#ffffff";
-          indicator = "#ffffff";
-          text = "#000000";
+        focused = { 
+          background = "${colors.white}";
+          border = "${colors.black}";
+          childBorder = "${colors.black}";
+          indicator = "${colors.white}";
+          text = "${colors.black}";
         };
       };
 

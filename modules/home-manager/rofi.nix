@@ -1,5 +1,8 @@
 { config, ... }:
 
+let
+  light = import ./../colors/light.nix;
+in
 {
   programs.rofi = {
     enable = true;
@@ -8,8 +11,8 @@
       inherit (config.lib.formats.rasi) mkLiteral;
     in{
       "*" = {
-        background-color = if config.theme.light.enable then mkLiteral "#c0caf5" else mkLiteral "#000000";
-        text-color = if config.theme.light.enable then mkLiteral "#1f2335" else mkLiteral "#7dfdfe";
+        background-color = if config.theme.light.enable then mkLiteral "${light.white}" else mkLiteral "#000000";
+        text-color = if config.theme.light.enable then mkLiteral "${light.black}" else mkLiteral "#7dfdfe";
         width = 512;
       };
 
