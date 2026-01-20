@@ -1,5 +1,6 @@
-@define-color tron #7dfdfe;
-@define-color tron-green #00ef10;
+@define-color white #acb0d0;
+@define-color black #1a1b26;
+@define-color red #f7768e;
 
 * {
   font-family: "Maple Mono";
@@ -14,26 +15,25 @@
 }
 
 window#waybar {
-  transition-property: black;
+  transition-property: white;
   transition-duration: 0.5s;
-  border-radius: 8px;
-  border: 2px solid @tron;
-  background: black;
-  color: @tron;
+  border-bottom: 2px solid @black;
+  background: @white;
+  color: @black;
 }
 
 menu,
 tooltip {
   border-radius: 8px;
   padding: 2px;
-  border: 1px solid @tron;
-  background: black;
+  border: 1px solid @red;
+  background: @white;
 }
 
 menu label,
 tooltip label {
   font-size: 14px;
-  color: @tron;
+  color: @black;
 }
 
 .modules-right,
@@ -67,15 +67,15 @@ tooltip label {
 #workspaces button {
   padding-left: 8px;
   padding-right: 8px;
-  color: @tron;
+  color: @black;
 }
 
 #workspaces button:hover {
   background: @tron;
-  color: black;
+  color: @white;
 }
 
 #workspaces button.active,
 #workspaces button.focused {
-  color: white;
+  color: @red;
 }

@@ -18,7 +18,7 @@
     syntaxHighlighting = true;
     theme = {
       enable = true;
-      name = "tokyo-night";
+      name = "tokyonight";
       style = "day";
     };
 

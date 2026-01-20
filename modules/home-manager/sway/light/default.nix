@@ -16,7 +16,7 @@
       # Launch waybar on startup
       startup = [
         { command = "waybar"; }
-        { command = "swww img ~/config/wallpapers/light.jpg"; }
+        { command = "swww img ~/config/wallpapers/light.png"; }
       ];
 
       window.titlebar = false;

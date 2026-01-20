@@ -5,5 +5,5 @@
 }:
 
 {
-  environment.systemPackages = inputs.nvf_light.packages.${pkgs.system}.default;
+  environment.systemPackages = [ inputs.nvf_light.packages.${pkgs.system}.default ];
 }

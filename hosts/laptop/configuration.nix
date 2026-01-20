@@ -9,8 +9,6 @@
     ./../../modules/nixos/ai.nix
   ];
 
-  theme.light.enable = true;
-
   environment.systemPackages = with pkgs; [
     teams-for-linux
   ];
