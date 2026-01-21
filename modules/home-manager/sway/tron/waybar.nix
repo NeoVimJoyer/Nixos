@@ -1,6 +1,6 @@
 { ... }:
 let
-  colors = import ./../../../../colors/tron.nix;
+  colors = import ./../../../colors/tron.nix;
 in
 {
   programs.waybar = {

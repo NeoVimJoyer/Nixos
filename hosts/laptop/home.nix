@@ -7,7 +7,7 @@
 
   imports = [
     ./../../modules/home-manager/default.nix
-    ./../../modules/home-manager/sway/light/default.nix
+    ./../../modules/home-manager/sway/tron/default.nix
   ];
 
   theme.light.enable = false;
