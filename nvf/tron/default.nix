@@ -1,5 +1,8 @@
 { ... }:
 
+let
+  colors = import ./../../modules/colors/tron.nix;
+in
 {
   vim = {
     enableLuaLoader = true; # Faster loading times
@@ -20,22 +23,22 @@
       enable = true;
       name = "base16";
       base16-colors = {
-        base00 = "#000000";
-        base01 = "#000000"; # 9a9a9a
-        base02 = "#000000";
-        base03 = "#6b6b6b";
-        base04 = "#7dfdfe";
-        base05 = "#7dfdfe";
-        base06 = "#7dfdfe";
-        base07 = "#FFFFFF";
-        base08 = "#f91e0b";
-        base09 = "#FFFFFF";
-        base0A = "#7dfdfe";
-        base0B = "#00ef10";
-        base0C = "#f6e035";
-        base0D = "#FFFFFF";
-        base0E = "#f6e035";
-        base0F = "#FFFFFF";
+        base00 = "${colors.black}";
+        base01 = "${colors.black}";
+        base02 = "${colors.black}";
+        base03 = "${colors.gray}";
+        base04 = "${colors.blue}";
+        base05 = "${colors.blue}";
+        base06 = "${colors.blue}";
+        base07 = "${colors.white}";
+        base08 = "${colors.red}";
+        base09 = "${colors.white}";
+        base0A = "${colors.blue}";
+        base0B = "${colors.green}";
+        base0C = "${colors.yellow}";
+        base0D = "${colors.white}";
+        base0E = "${colors.yellow}";
+        base0F = "${colors.white}";
       };
     };
 

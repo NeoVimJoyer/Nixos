@@ -32,14 +32,14 @@ in
           background = "${colors.white}";
           border = "${colors.black}";
           childBorder = "${colors.black}";
-          indicator = "${colors.white}";
+          indicator = "${colors.black}";
           text = "${colors.black}";
         };
         focused = { 
           background = "${colors.white}";
           border = "${colors.black}";
           childBorder = "${colors.black}";
-          indicator = "${colors.white}";
+          indicator = "${colors.black}";
           text = "${colors.black}";
         };
       };

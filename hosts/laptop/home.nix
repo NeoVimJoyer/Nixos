@@ -10,7 +10,7 @@
     ./../../modules/home-manager/sway/light/default.nix
   ];
 
-  theme.light.enable = true;
+  theme.light.enable = false;
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

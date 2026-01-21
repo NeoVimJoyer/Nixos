@@ -1,13 +1,7 @@
 { pkgs, ... }:
 
 let
-  # Tron colorscheme
-  white = "FFFFFF";
-  red = "f91e0b";
-  yellow = "f6e035";
-  blue = "7dfdfe";
-  cyan = "2f8ca3";
-  green = "00ef10";
+  colors = import ./../../../colors/tron.nix;
 in
 {
   programs.swaylock = {
@@ -19,21 +13,21 @@ in
       fade-in = .3;
 
       disable-caps-lock-text = true;
-      bs-hl-color = red;
+      bs-hl-color = "${colors.red}";
       indicator-idle-visible = true;
       indicator-radius = 100;
       indicator-thickness = 15;
-      inside-color = blue;
-      inside-clear-color = yellow;
-      inside-ver-color = green;
-      inside-wrong-color = red;
-      key-hl-color = cyan;
-      layout-text-color = white;
-      ring-color = blue;
-      ring-clear-color = yellow;
-      ring-ver-color = green;
-      ring-wrong-color = red;
-      text-color = white;
+      inside-color = "${colors.blue}";
+      inside-clear-color = "${colors.yellow}";
+      inside-ver-color = "${colors.green}";
+      inside-wrong-color = "${colors.red}";
+      key-hl-color = "${colors.cyan}";
+      layout-text-color = "${colors.white}";
+      ring-color = "${colors.blue}";
+      ring-clear-color = "${colors.yellow}";
+      ring-ver-color = "${colors.green}";
+      ring-wrong-color = "${colors.red}";
+      text-color = "${colors.white}";
     };
   };
 }

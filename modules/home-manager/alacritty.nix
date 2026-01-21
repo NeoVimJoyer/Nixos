@@ -2,6 +2,7 @@
 
 let
   light = import ./../colors/light.nix;
+  tron = import ./../colors/tron.nix;
 in
 {
   options.theme.light.enable = lib.mkEnableOption "enables light theme, tron is default" // { default = false; };
@@ -34,18 +35,18 @@ in
           };
         } else {
           primary ={
-            foreground = "#7dfdfe";
-            background = "#000000";
+            foreground = "${tron.blue}";
+            background = "${tron.black}";
           };
           normal = {
-            black = "#000000";
-            red = "#f91e0b";
-            green = "#00ef10";
-            yellow = "#f6e035";
-            blue = "#7dfdfe";
-            magenta = "#6507f5";
-            cyan = "#2f8ca3";
-            white = "#FFFFFF";
+            black = "${tron.black}";
+            red = "${tron.red}";
+            green = "${tron.green}";
+            yellow = "${tron.yellow}";
+            blue = "${tron.blue}";
+            magenta = "${tron.purple}";
+            cyan = "${tron.cyan}";
+            white = "${tron.white}";
           };
         };
       };

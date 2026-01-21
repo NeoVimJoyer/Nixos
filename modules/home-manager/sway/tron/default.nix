@@ -1,10 +1,13 @@
 { ... }:
 
+let
+  colors = import ./../../../colors/tron.nix;
+in
 {
   imports = [
     ../default.nix
     ./swaylock.nix
-    ./waybar/default.nix
+    ./waybar.nix
   ];
 
   # Wallpaper app
@@ -26,18 +29,18 @@
       };
       colors = {
         unfocused = {
-          background = "#000000";
-          border = "#000000";
-          childBorder = "#000000";
-          indicator = "#000000";
-          text = "#ffffff";
+          background = "${colors.black}";
+          border = "${colors.black}";
+          childBorder = "${colors.black}";
+          indicator = "${colors.black}";
+          text = "${colors.white}";
         };
         focused = {
-          background = "#000000";
-          border = "#000000";
-          childBorder = "#000000";
-          indicator = "#000000";
-          text = "#ffffff";
+          background = "${colors.black}";
+          border = "${colors.black}";
+          childBorder = "${colors.black}";
+          indicator = "${colors.black}";
+          text = "${colors.white}";
         };
       };
 

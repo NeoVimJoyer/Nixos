@@ -2,6 +2,7 @@
 
 let
   light = import ./../colors/light.nix;
+  tron = import ./../colors/tron.nix;
 in
 {
   programs.rofi = {
@@ -11,8 +12,8 @@ in
       inherit (config.lib.formats.rasi) mkLiteral;
     in{
       "*" = {
-        background-color = if config.theme.light.enable then mkLiteral "${light.white}" else mkLiteral "#000000";
-        text-color = if config.theme.light.enable then mkLiteral "${light.black}" else mkLiteral "#7dfdfe";
+        background-color = if config.theme.light.enable then mkLiteral "${light.white}" else mkLiteral "${tron.black}";
+        text-color = if config.theme.light.enable then mkLiteral "${light.black}" else mkLiteral "${tron.blue}";
         width = 512;
       };
 

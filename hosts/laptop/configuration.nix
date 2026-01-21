@@ -5,7 +5,7 @@
     ./hardware-configuration.nix
     ./../../modules/nixos/default.nix
     ./../../modules/nixos/sway/default.nix
-    ./../../modules/nixos/nvf/nvf_light.nix
+    ./../../modules/nixos/nvf/nvf_tron.nix
     ./../../modules/nixos/ai.nix
   ];
 
