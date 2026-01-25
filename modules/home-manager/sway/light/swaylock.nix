@@ -17,13 +17,13 @@ in
       indicator-idle-visible = true;
       indicator-radius = 100;
       indicator-thickness = 15;
-      inside-color = "${colors.white}";
+      inside-color = "${colors.lavender}";
       inside-clear-color = "${colors.brown}";
       inside-ver-color = "${colors.green}";
       inside-wrong-color = "${colors.red}";
       key-hl-color = "${colors.blue}";
       layout-text-color = "${colors.black}";
-      ring-color = "${colors.white}";
+      ring-color = "${colors.lavender}";
       ring-clear-color = "${colors.brown}";
       ring-ver-color = "${colors.green}";
       ring-wrong-color = "${colors.red}";

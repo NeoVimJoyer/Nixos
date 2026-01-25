@@ -106,7 +106,7 @@ in
         transition-property: black;
         transition-duration: 0.5s;
         border-bottom: 2px solid ${colors.black};
-        background: ${colors.white};
+        background: ${colors.lavender};
         color: ${colors.black};
       }
 
@@ -115,7 +115,7 @@ in
         border-radius: 8px;
         padding: 2px;
         border: 1px solid ${colors.black};
-        background: ${colors.white};
+        background: ${colors.lavender};
       }
 
       menu label,
@@ -160,7 +160,7 @@ in
 
       #workspaces button:hover {
         background: ${colors.black};
-        color: ${colors.white};
+        color: ${colors.lavender};
       }
 
       #workspaces button.active,
