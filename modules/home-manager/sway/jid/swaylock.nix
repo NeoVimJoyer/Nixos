@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  colors = import ./../../../colors/tron.nix;
+  colors = import ./../../../colors/jid.nix;
 in
 {
   programs.swaylock = {
@@ -17,14 +17,14 @@ in
       indicator-idle-visible = true;
       indicator-radius = 100;
       indicator-thickness = 15;
-      inside-color = "${colors.blue}";
-      inside-clear-color = "${colors.yellow}";
+      inside-color = "${colors.yellow}";
+      inside-clear-color = "${colors.orange}";
       inside-ver-color = "${colors.green}";
       inside-wrong-color = "${colors.red}";
       key-hl-color = "${colors.cyan}";
       layout-text-color = "${colors.white}";
-      ring-color = "${colors.blue}";
-      ring-clear-color = "${colors.yellow}";
+      ring-color = "${colors.yellow}";
+      ring-clear-color = "${colors.orange}";
       ring-ver-color = "${colors.green}";
       ring-wrong-color = "${colors.red}";
       text-color = "${colors.white}";
