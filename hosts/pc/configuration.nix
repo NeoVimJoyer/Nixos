@@ -1,0 +1,16 @@
+{ ... }:
+
+{
+  imports = [
+    ./hardware-configuration.nix
+    ./../../modules/nixos/default.nix
+    ./../../modules/nixos/sway/default.nix
+    ./../../modules/nixos/nvf/nvf_jid.nix
+    ./../../modules/nixos/ai.nix
+    #./../../modules/nixos/gaming.nix
+  ];
+
+  callum.autologin.enable = true;
+  networking.hostName = "pc";
+  home-manager.users."callum" = import ./home.nix;
+}
