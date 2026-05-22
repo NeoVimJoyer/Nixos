@@ -23,6 +23,7 @@
       zip
       unzip
       sl
+      mpg123
     ];
   };
 }

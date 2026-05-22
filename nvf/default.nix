@@ -2,7 +2,7 @@
 
 {
   vim = {
-    treesitter.enable = false; # Until it stopps throwing error, Im done
+    treesitter.enable = true;
   
     enableLuaLoader = true; # Faster loading times
     diagnostics = {
@@ -48,7 +48,7 @@
       git-conflict.enable = true;
       gitsigns.enable = true;
     };
-    #minimap.codewindow.enable = true; # Code window no longer works
+    #minimap.codewindow.enable = true; # This is stupid and doesn't work anymore
     notify.nvim-notify.enable = true;
     runner.run-nvim.enable = true;
     statusline.lualine.enable = true;
@@ -71,7 +71,7 @@
       icon-picker.enable = true;
       multicursors.enable = true;
       nix-develop.enable = true;
-      #nvim-biscuits.enable = true; # Depreciated cause of course
+      #nvim-biscuits.enable = true; # I hate everything
       oil-nvim.enable = true;
       outline.aerial-nvim.enable = true;
       surround.enable = true;
@@ -88,7 +88,7 @@
 
     lsp.enable = true;
     languages = {
-      enableTreesitter = false; # Until they fix their API calls
+      enableTreesitter = true;
 
       nix.enable = true;
       python.enable = true;

@@ -19,6 +19,10 @@ in
         { command = "awww img ~/config/wallpapers/tron.jpg"; }
       ];
 
+      keybindings = {
+        "Mod4+Shift+i" = "workspace number 1; exec waybar; exec awww img --transition-step 255 ~/config/wallpapers/tron.jpg; exec pkill mpg123";
+      };
+
       window.titlebar = false; 
       gaps = {
         outer = 5;

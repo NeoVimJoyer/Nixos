@@ -11,12 +11,21 @@
       syntaxHighlighting.enable = true;
 
       initContent = ''
-        if [[ $LAST_COMMAND != "" ]]; then
-          precmd() { print "end of line" }
-        fi
-
-        preexec() { LAST_COMMAND="$1" }
-      ''; # Not working for some reason
+        typeset -g _mcp_ran=0
+        autoload -Uz add-zsh-hook
+        add-zsh-hook preexec _mcp_mark
+        add-zsh-hook precmd  _mcp_announce
+        _mcp_mark() {
+          case "''${1%% *}" in
+            clear|cl) _mcp_ran=0 ;;
+            *)        _mcp_ran=1 ;;
+          esac
+        }
+        _mcp_announce() {
+          (( _mcp_ran )) && print -P "%F{red}\nEND OF LINE\n%f"
+          _mcp_ran=0
+        }
+      '';
 
       shellAliases = {
         lc = "sl";

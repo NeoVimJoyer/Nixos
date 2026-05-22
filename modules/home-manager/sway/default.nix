@@ -22,6 +22,9 @@ in
       bars = [ ];
 
       keybindings = {
+        # This is my most inportant keybind, it makes the titlecard happen
+        "${mod}+i" = "workspace number 11; exec pkill waybar; exec pactl set-sink-volume \@DEFAULT_SINK@ 100%; exec awww img --transition-step 255 ~/config/invincible/title-card.png; exec mpg123 -q ~/config/invincible/title-card.mp3";
+
         "${mod}+h" = "focus left";
         "${mod}+j" = "focus down";
         "${mod}+k" = "focus up";
